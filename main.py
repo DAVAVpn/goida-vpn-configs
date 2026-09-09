@@ -40,7 +40,7 @@ def main(dry_run: bool = False):
     # их последовательно (release links, VC runtime, статистика репозитория).
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as net_pool:
         f_releases = net_pool.submit(fetch_latest_release_links)
-        f_vc = net_pool.submit(vc_runtime_link)
+        f_vc = net_pool.submit(fetch_vc_runtime_link)
         f_stats = net_pool.submit(get_repo_stats)
         release_links = f_releases.result()
         vc_runtime_link = f_vc.result()

@@ -1,7 +1,7 @@
 import re
 import os
-from src.logger import log
-from src.network import REQUESTS_SESSION
+from logger import log
+from network import REQUESTS_SESSION
 
 # -------------------- ССЫЛКИ НА СКАЧИВАНИЕ --------------------
 

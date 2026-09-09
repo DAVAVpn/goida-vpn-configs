@@ -2,13 +2,13 @@ import argparse
 import concurrent.futures
 import os
 import sys
-from src.config import URLS, DEFAULT_MAX_WORKERS
-from src.logger import updated_files, _UPDATED_FILES_LOCK, LOGS_BY_FILE
-from src.file_manager import download_and_save, create_filtered_configs
-from src.release_fetcher import fetch_latest_release_links, fetch_vc_runtime_link
-from src.readme_updater import update_readme_download_links, update_readme_table
-from src.github_api import get_repo_stats
-from src.git_ops import git_commit_and_push
+from config import URLS, DEFAULT_MAX_WORKERS
+from logger import updated_files, _UPDATED_FILES_LOCK, LOGS_BY_FILE
+from file_manager import download_and_save, create_filtered_configs
+from release_fetcher import fetch_latest_release_links, fetch_v2ray_runtime_links
+from readme_updater import update_readme_download_links, update_readme_table
+from github_api import get_repo_stats
+from git_ops import git_commit_and_push
 
 # Настройка кодировки вывода для избежания ошибок UnicodeEncodeError на Windows
 try:

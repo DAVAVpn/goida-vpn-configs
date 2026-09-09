@@ -1,5 +1,5 @@
-from src.logger import log
-from src.config import GITHUB_TOKEN, REPO_NAME
+from logger import log
+from config import GITHUB_TOKEN, REPO_NAME
 
 # -------------------- GITHUB API (только для статистики) --------------------
 _repo_stats_client = None

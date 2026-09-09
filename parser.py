@@ -3,7 +3,7 @@ import base64
 import urllib.parse
 import html
 import os
-from src.logger import log
+from logger import log
 
 # -------------------- ФИЛЬТРАЦИЯ --------------------
 

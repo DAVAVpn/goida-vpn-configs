@@ -7,7 +7,7 @@ from logger import updated_files, _UPDATED_FILES_LOCK, LOGS_BY_FILE
 from file_manager import download_and_save, create_filtered_configs
 from release_fetcher import fetch_latest_release_links
 from readme_updater import update_readme_download_links, update_readme_table
-from github_api import repo_stats
+from github_api import get_repo_stats
 from git_ops import git_commit_and_push
 
 # Настройка кодировки вывода для избежания ошибок UnicodeEncodeError на Windows

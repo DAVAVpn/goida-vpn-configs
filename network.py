@@ -3,7 +3,7 @@ import requests
 import urllib3
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-from src.config import URLS, DEFAULT_MAX_WORKERS
+from config import URLS, DEFAULT_MAX_WORKERS
 
 # -------------------- HTTP-СЕССИЯ --------------------
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)

@@ -4,7 +4,7 @@ import json
 import re
 import base64
 import concurrent.futures
-from src.config import (
+from config import (
     URLS,
     LOCAL_PATHS,
     GITHUBMIRROR_DIR,
@@ -13,9 +13,9 @@ from src.config import (
     EXTRA_URL_TIMEOUT,
     EXTRA_URL_MAX_ATTEMPTS,
 )
-from src.logger import log
-from src.network import fetch_data, _format_fetch_error
-from src.parser import filter_insecure_configs
+from logger import log
+from network import fetch_data, _format_fetch_error
+from parser import filter_insecure_configs
 
 # -------------------- ЛОКАЛЬНЫЕ ФАЙЛЫ --------------------
 

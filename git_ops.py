@@ -1,7 +1,7 @@
 import subprocess
 import os
-from src.config import GITHUBMIRROR_DIR, README_PATH, GIT_ROOT
-from src.logger import log, offset
+from config import GITHUBMIRROR_DIR, README_PATH, GIT_ROOT
+from logger import log, offset
 
 # -------------------- GIT --------------------
 
